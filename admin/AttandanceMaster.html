@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttendanceMaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/AttandanceMaster.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="attendance-app">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="clock-icon.png" alt="AttendanceMaster" class="me-2">AttendanceMaster</a>
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-item nav-link" href="#">Dashboard</a>
+                        <a class="nav-item nav-link" href="#">Employee Management</a>
+                        <a class="nav-item nav-link active" href="#">Real-time Monitoring</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="content-area p-4">
+                <h2 class="mb-3">Real-time Employee Attendance</h2>
+                <button id="editAttendance" class="btn btn-success mb-4">Edit Attendance</button>
+                
+                <div class="row">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <div id="employeeList"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-header">Notifications</div>
+                            <div class="card-body" id="notifications"></div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">Unusual Activities</div>
+                            <div class="card-body" id="unusualActivities"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="mt-auto bg-success text-white p-3">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0">&copy; 2023 AttendanceMaster. All rights reserved</p>
+                        <div>
+                            <a href="#" class="text-white me-3">Privacy Policy</a>
+                            <a href="#" class="text-white me-3">Terms of Service</a>
+                            <a href="#" class="text-white">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/AttandanceMaster.js"></script>
+</body>
+</html>

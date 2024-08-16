@@ -1,0 +1,116 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.attendance-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.content-area {
+    flex: 1;
+}
+
+.employee-card {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.employee-card .card-body {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.employee-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.employee-info {
+    flex-grow: 1;
+}
+
+.employee-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.employee-status {
+    font-size: 0.9em;
+}
+
+.edit-btn {
+    padding: 5px 15px;
+    font-size: 0.9em;
+}
+
+.present {
+    background-color: #d4edda;
+}
+
+.absent {
+    background-color: #f8d7da;
+}
+
+.late {
+    background-color: #fff3cd;
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #f1f3f5;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .nav-item {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .content-area {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-success {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .nav-item {
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        font-size: 0.8em;
+    }
+}
